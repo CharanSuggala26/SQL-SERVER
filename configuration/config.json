@@ -1,0 +1,37 @@
+{
+    "sql": {
+        "connection_string":""
+    },
+    "phrase_splitter": " in |in | in| and |and | and| with |with | with| of |of | of",
+    "default_columns": {
+        "entities": {
+            "student":"name",
+            "subject":"name",
+            "student_mark":"id"
+        }
+    },
+    "entities_to_load": [
+        {
+            "entity": "subject",
+            "column": "name" 
+        },
+        {
+            "entity": "student",
+            "column": "name" 
+        }
+    ],
+    "synonyms": {
+        "column": [
+            {
+                "original": "class",
+                "synonyms": [ "standard" ]
+            }
+        ],
+        "table": [
+            {
+                "original": "student",
+                "synonyms": [ "children", "child" ]
+            }
+        ]
+    }
+}
